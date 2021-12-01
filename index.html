@@ -35,8 +35,8 @@
     <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo">St.Odilias Dispensary</a>
 
     <nav class="navbar">
-        <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
-        <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">about</a>
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="index.html">home</a>
+        <a data-aos="zoom-in-left" data-aos-delay="450" href="about.html">about</a>
         <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">facilities</a>
         <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">services</a>
         <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">gallery</a>
@@ -62,7 +62,7 @@
             </center>
                   </div>
      </center>
-        <a data-aos="fade-up" data-aos-delay="600" href="#" class="btn">Book appointment</a>
+        <a data-aos="fade-up" data-aos-delay="600" href="#book-form" class="btn">Book appointment</a>
     </div>
 
 </section>
@@ -73,19 +73,21 @@
 
 <section class="book-form" id="book-form">
 
-    <form action="https://formsubmit.co/victormwendwa2002@gmail.com" method="POST">
+    <form action="https://formsubmit.co/info@odilias.co.ke" method="POST">
+        <input type="hidden" name="_subject" value="Appointment!">
+        <input type="text" name="_honey" style="display:none">
         <input type="hidden" name="_captcha" value="false">
         <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
             <span>Which clinic?</span>
-            <input type="text" placeholder="clinic name" value="">
+            <input type="text"name="_subject" placeholder="clinic name" value="">
         </div>
         <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
             <span>when?</span>
-            <input type="datetime" placeholder="date & time" value="">
+            <input type="datetime-local" name="_subject" placeholder="date & time" value="">
         </div>
         <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
-            <span>phone number?</span>
-            <input type="tel" placeholder="phone number" value="">
+            <span>phone number or email?</span>
+            <input type="tel" name="_subject"  placeholder="phone number" value="">
         </div>
         <input data-aos="zoom-in" data-aos-delay="600" type="submit" value="send" class="btn">
     </form>
@@ -102,17 +104,17 @@
         <video src="images/odilias_newbuilding.mp4" muted autoplay loop class="video"></video>
         <div class="controls">
             <span class="control-btn" data-src="images/odilias_newbuilding.mp4"></span>
-            <span class="control-btn" data-src="images/odilias_newbuilding.mp4"></span>
-            <span class="control-btn" data-src="images/odilias_newbuilding.mp4"></span>
+            <span class="control-btn" data-src="images/video1.mp4"></span>
+            <span class="control-btn" data-src="images/video3.mp4"></span>
         </div>
     </div>
 
     <div class="content" data-aos="fade-left" data-aos-delay="600">
         <span>About us </span>
         
-        <p>Welcome to the Get Well -     St. Odilia’s Dispensary website, and thank you for taking the time to learn about the services available right here in our Dispensary. We are here to provide you and your family with personal and compassionate service whenever healthcare needs arises.  Since 1987, St. Odilia’s Dispensary has focused on Preventive, Curative and Rehabilitative services through serving the surrounding communities, improving their health and quality of life. <br><i class="far fa-user">Message from the admin</i> </p>
+        <p>Welcome to the Get Well -     St. Odilia’s Dispensary website, and thank you for taking the time to learn about the services available right here in our Dispensary. We are here to provide you and your family with personal and compassionate service whenever healthcare needs arises.  Since 1987, St. Odilia’s Dispensary has focused on Preventive, Curative and Rehabilitative services through serving the surrounding communities, improving their health and quality of life. <br><i style="border: 2px solid darkslateblue; color: darkslateblue; border-radius: 50%; padding: 10px;" class="far fa-user"></i> <span>Message from : <br> Hospital Administrator Sr.Bernadette Nzuve OSB</span> </p>
          
-        <a href="#" class="btn">read more</a>
+        <a href="about.html" class="btn">read more</a>
     </div>
 
 </section>
@@ -204,188 +206,117 @@
             <p>Our doctors are well equipped with accurate skills, expertise and experience to diagnose, treat and refer for further management.
                 We offer a comprehensive approach for all your health needs, from screening and diagnosis to treatment and follow up support through attentive listening and clinical reasoning activities.
                 A standard sequential structure of clinical consultation approach is employed.
-                <span id="dots">...</span><span id="more">During the opening phase which normally consists of an informal conversation with the patient,generally, the aim of this phase is establishing relationship with the patient in order to start the process of clinical interaction.
-                    Detailed history-taking is the second phase of consultation during which the doctor attempts to understand the reason for the patient’s attendance by simply asking the patient's history of the presenting complaint, set in the context of the patient's life and known medical conditions.
-                    In the third phase, the doctor is involved in examining the patient’s health problem through physical examination which adds some further useful information.
-                    Diagnosis is the fourth phase in which the doctor presents the patient’s health condition based on elicited medical information and it’s during this phase that patients are sent for additional laboratory tests or radiological examinations may be required to confirm the diagnosis.
-                    The fifth stage is offering clinical treatment and professional advice by the doctor based on the patient’s diagnostic findings and discharges the patient through pharmacy.
-                    </span>
+               
             </p>
-            <button class="btn" onclick="myFunction()" id="myBtn">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         </div>
 
         <div class="box blogBox" data-aos="zoom-in-up" data-aos-delay="300">
             <i class="fas fa-microscope"></i>
             <h3>laboratory</h3>
             <p>Our highly qualified, skilled and motivated St Odilia’s laboratory team combining a multitude of experience with the latest technology and current equipment  ensure the highest accurate and reliable results in the shortest turn round time communicated to our esteemed customers always.
-                <span id="dots1">...</span><span id="more1">Laboratory services are an essential component of curative and preventive health care activities worldwide and are essential for the effective management and control of diseases of public health importance.
-                    Laboratory investigations are a vital part of the clinical assessment and laboratory results guide the selection of drugs for patient management, leading to improved disease recognition and effective individual health outcome.
-                    We are enrolled to international  HUQAS (Human Quality Assessment Services) where are subscribed to various programmes that are relevant to medical operations and especially Biochemistry and Heamotology for international peer reviews.
-                    We perform daily internal quality and calibration control to ensure quality reports. We observe international standards of quality; safety checks, standard operating procedures and protocols which ensure quality management and quality control assurance to ensure accurate report.
-                     </span>      
+               
             </p>
-            <button  class="btn">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         </div>
 
         <div class="box blogBox" data-aos="zoom-in-up" data-aos-delay="450">
             <i class="fas fa-tooth"></i>
             <h3>Dental</h3>
-            <p>Comprehensive dental services are an essential component of the medical care that patients of St. Odilia’s dispensary receive. We focus on disease prevention, management of oral health, rehabilitation, and restoration of oral function. The good dental health care we offer has improved esthetics, speech, nutrition, comfort, and over-all health to our esteemed customers.
-                <span id="dots2">...</span><span id="more2">Our team dedicates their skill and expertise to make your smile even brighter. with a positive dental experience and healthy dental habits to last 
-                    St. Odilia’s Dispensary dental unit is equipped with a modern dental unit, tools and materials needed. The focus on hygiene is of great essence.
-                    We  offers a wide range of services for both adults and to children including full range of  General Dentistry, Cosmetic Dentistry(gold & silver crown), Orthodontics Dentistry (Braces),Paediatric Dentistry,(Pulpectomy)Restorative Dentistry(Filling ,Root Canal ),Prosthetic Dentistry(Dentures ,Crown and Bridge )and Preventive Dentistry (Fluoride Therapy ),Open and Closed Disimpaction  , Full mouth scaling, locked  jaw reduction, Splinting ,Minor oral surgery and Dental X-ray. 
-                    </span>
+            <p>We  offers a wide range of services for both adults and to children including full range of  General Dentistry, Cosmetic Dentistry(gold & silver crown), Orthodontics Dentistry (Braces),Paediatric Dentistry,(Pulpectomy)Restorative Dentistry(Filling ,Root Canal ),Prosthetic Dentistry(Dentures ,Crown and Bridge )and Preventive Dentistry (Fluoride Therapy ),Open and Closed Disimpaction  , Full mouth scaling, locked  jaw reduction, Splinting ,Minor oral surgery and Dental X-ray. 
             </p>
-            <button class="btn" onclick="myFunction()" id="myBtn2">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         </div>
 
         <div class="box blogBox" data-aos="zoom-in-up" data-aos-delay="600">
             <i class="fas fa-x-ray"></i>
             <h3>Imaging Department</h3>
-            <p>St. Odilia’s Dispensary provides state-of-the-art diagnostic at our radiology department. We are equipped with high-quality and effective diagnostic imaging technology including: digital X-ray and Ultrasound.
-                Our X-ray machine has the capacity to perform all radiographic procedures with the best diagnostic value .
-                <span id="dots3">...</span><span id="more3">We even offer special procedures like barium studies at the most affordable prices. Radiation protection and customers safety is mandatory and observed in our department.
-                    Our ultrasound machine is one of the latest in the market that offers the best painless noninvasive and real time diagnostics .All sonographic procedures are offered in our facility.
-                    Our experienced, knowledgeable, very efficient and courteous radiologist technologists treat you with respect and professionalism. Care and attention to details is core value in our imaging department because we believe with the best diagnostic comes the best treatment.
-                    We take time to explain each procedure so you'll know what to anticipate every step of the way, beginning with how to prepare for an imaging procedure. We encourage patients to ask questions if they want more information about a specific process or procedure. 
-                    All these will be interpreted by radiologists, and a written report issued.
-                    </span>
+            <p>Our X-ray machine has the capacity to perform all radiographic procedures with the best diagnostic value .We even offer special procedures like barium studies at the most affordable prices. Radiation protection and customers safety is mandatory and observed in our department.
+                Our ultrasound machine is one of the latest in the market that offers the best painless noninvasive and real time diagnostics .All sonographic procedures are offered in our facility.
+                
             </p>
-            <button class="btn" onclick="myFunction()" id="myBtn3">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         </div>
 
         <div class="box blogBox" data-aos="zoom-in-up" data-aos-delay="750">
             <i class="fas fa-baby"></i>
             <h3>Antenatal and child heath </h3>
-            <p>We offer two different services under this department to include Antenatal Care, and Child welfare and immunization.
-                Antenatal Care is the overall medical care of a pregnant mother from conception to delivery.
-                <span id="dots4">...</span><span id="more4">During this period we ensure a healthy pregnancy for both the mother and the developing baby.  Antenatal care is also a vital step in helping doctors detect and treat problems promptly, prevent complications, and refer women to appropriate specialists when necessary through medical assessments, health education, fetal monitoring, and laboratory tests, vitamins and medications, 	
-                    As you await the arrival of your little one, it's normal to wonder if you’re prepared for parenthood. At St. Odilia’s Dispensary we offers an array of individualized services and  strive to make you feel educated, cared for and confident as you embark on this experience of a lifetime in a respected, unique way. Trust St. Odilia’s Dispensary doctors with your Antenatal care and you will not be disappointed.
-                    Our Antenatal clinics are every Wednesday of the week
-                    Did you know?
-                    That mothers who do not get antenatal care have three times as many low birth weight babies as women who do seek prenatal care???
-                    </span>  
+            <p>
+                Our Antenatal clinics are every Wednesday of the week.
+                St. Odilia’s dispensary offers two different services under this department to include Antenatal Care, and Child welfare and immunization.
+                Antenatal care is  a vital step in helping doctors detect and treat problems promptly, prevent complications, and refer women to appropriate specialists when necessary through medical assessments, health education, fetal monitoring, and laboratory tests, vitamins and medications.	
             </p>
-            <button class="btn" onclick="myFunction()" id="myBtn4">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         </div>
 
         <div class="box blogBox" data-aos="zoom-in-up" data-aos-delay="900" >
             <i class="fas fa-pills"></i>
             <h3>Pharmacy</h3>
-            <p>Our Dispensary has a well-stocked pharmacy manned by pharmaceutical technologists who are committed to providing efficient services to patients, whilst ensuring that treatment is safe and appropriate
-                <span id="dots5">...</span><span id="more5">Our Pharmaceutical Technologists offer much more than simply handling customers prescription and dispensing, to include providing information on medicine and counselling of customers, having a relatively well-run procurement and supplies system, policies and procedures which are in place to guide aspects of the function such as ordering and receiving of supplies, storage and security of medicines and pharmaceutical supplies, expiry tracking etc.
-                Our pharmacy department has the support of Drug and Therapeutic Committee which has a formulary list and medicine guideline to rationalize prescribing and control medicine use. 
-            
+            <p>
+                
+                Our Pharmaceutical Technologists offer much more than simply handling customers prescription and dispensing, to include providing information on medicine and counselling of customers, having a relatively well-run procurement and supplies system, policies and procedures which are in place to guide aspects of the function such as ordering and receiving of supplies, storage and security of medicines and pharmaceutical supplies, expiry tracking etc.
             </p>
-            <button class="btn" onclick="myFunction()" id="myBtn5">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         
         </div>
 
         <div class="box moreBox blogBox" data-aos="zoom-in-up" data-aos-delay="900" style="display: none;">
             <i class="fas fa-syringe"></i>
             <h3>Child welfare clinic and Immunization (CWC)</h3>
-            <p>One of the most important things that a parent can do for their child is to make sure that they have all their routine childhood vaccination at the right age and interval to protect them as early as possible and minimize the risks of infection.
-                <span id="dots6">...</span><span id="more6">Vaccination is a simple, safe, and effective way of protecting your child against harmful diseases, before they come into contact with them. It uses the body’s natural defenses to build resistance to specific infections and makes your immune system stronger.
-                    Vaccines train the immune system to create antibodies, just as it does when it’s exposed to a disease. However, because vaccines contain only killed or weakened forms of germs like viruses or bacteria, they do not cause the disease or put the child at risk of its complications.
-                    Our clinics are on every Friday of the week .
-                    </span>
+            <p>Our clinics are on every Friday of the week.
+                One of the most important things that a parent can do for their child is to make sure that they have all their routine childhood vaccination at the right age and interval to protect them as early as possible and minimize the risks of infection.
+
             </p>
-            <button class="btn" onclick="myFunction()" id="myBtn6">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         </div>
 
        <div class="box moreBox blogBox" data-aos="zoom-in-up" data-aos-delay="900"style="display: none;">
             <i class="fas fa-shield-virus"></i>
             <h3>Comprehensive Care Clinic for H.I.V and A.I.D.S &TB Service</h3>
             <p>St. Odilia’s Dispensary is committed to the wellbeing of the human population especially in regard to chronic condition.
-                We provide compassionate care focusing on the physical, spiritual and emotional care for our clients living with HIV & AIDS as well as TB.
-                <span id="dots7">...</span><span id="more7">We empower our clients with education on how to live a healthy life style full of hope and happiness despite their conditions
-                    All patient information at the CCC is treated with the utmost confidentiality and care, therefore there’s assurance of upmost privacy to our clients. 
-                    </span>    
+We provide compassionate care focusing on the physical, spiritual and emotional care for our clients living with HIV & AIDS as well as TB
+We empower our clients with education on how to live a healthy life style full of hope and happiness despite their conditions.
+
             </p>
-            <button class="btn" onclick="myFunction()" id="myBtn7">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         </div>
 
         <div class="box moreBox blogBox" data-aos="zoom-in-up" data-aos-delay="900"style="display: none;" >
             <i class="fa fa-medkit" aria-hidden="true"></i>
-            <h3>Minor Surgical Operation</h3>
-            <p>Minor surgical procedures are a set of procedures in which short surgical techniques are applied on the superficial tissues, usually with local anaesthesia, and minimal complication.
-                They usually do not require post-operative resuscitation and need minimal equipment, many of which are used on a daily basis and can be easily and safely performed in a short amount of time during hospital visit
-            <span id="dots8">...</span><span id="more8">One of the special minor surgical operations we do is group circumcision of young boys at special prices who are for initiation to adulthood aimed at “trains in children” in areas like “leadership; expectations of adulthood and the role of the individual in the society; family values and parent-child relationship; and sexuality.
-                Male circumcision, is the surgical removal of all or part of the foreskin of the penis is one of the oldest and most common surgical procedures worldwide. It is usually practiced for religious, and social –cultural reasons. Research evidence has in the past shown that male circumcision has a number of health benefits: including reduced risk in acquisition of urinary tract infections; syphilis; cancroid and the human papilloma virus in circumcised men and cervical cancer in women whose partners are circumcised. 
-                Christianity has embraced the argument that circumcision was a community affair that enabled the initiate to holistically grow from childhood to adulthood in social, religious and physical aspects of their lives 
-                St.Odilias dispensary in conjunction with Subiaco center also our facility within the same compound offer accommodation for such services
+             <h3>
+                 Minor Surgical operations
+             </h3>
+           
+            <p>
                 We also offer other minor surgeries to include Removal of lipoma, Incision and drainage Removal of corn, Removal of foreign body, Removal of nail, Removal of stitches, Suturing and many more others
-                </span>  
-
             </p>
-            <button class="btn" onclick="myFunction()" id="myBtn8">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         </div>
 
         <div class="box blogBox moreBox" data-aos="zoom-in-up" data-aos-delay="900" style="display: none;">
             <i class="fas fa-hospital-user" aria-hidden="true"></i>
             <h3>Special Clinics</h3>
-            <p>Among the special clinics are hypertension and Diabetes, Eye and Gynecology /Obstetrics
-                Diabetes includes several different metabolic disorders that all, if left untreated, result in abnormally high concentration of sugar called glucose in the body. Hypertension is also known as High blood pressure. High pressure is the force exerted by the blood against the walls of the blood vessels. How great the pressure is depends on the work being done by the heart and the resistance of the blood vessels.
-                
-            <span id="dots9">...</span><span id="more9">Some types of hypertension can be managed through lifestyle and dietary choices, such as engaging in physical activity, reducing alcohol and tobacco use, and avoiding a high-sodium diet.. 
+            <p>
+                Among the special clinics are hypertension and Diabetes, Eye and Gynecology /Obstetrics.
                 St. Odilia’s Dispensary has a team of health professionals dedicated to providing you with support, education and the skills you need to take control of diabetes and hypertension 
-                We are here to help and ensure you are receiving the information and support you need to manage diabetes and hypertension successfully
-                 Our diabetes clinic runs every Friday.
-                
-                
-                
-                </span>  
+We are here to help and ensure you are receiving the information and support you need to manage diabetes and hypertension successfully
+ Our diabetes clinic runs every Friday.
+
 
             </p>
-            <button class="btn" onclick="myFunction()" id="myBtn9">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         </div>
 
         <div class="box moreBox blogBox" data-aos="zoom-in-up" data-aos-delay="900" style="display: none;" >
             <i class="fas fa-user-md" aria-hidden="true"></i>
             <h3>Physiotherapy</h3>
             <p>
+                
                 Physiotherapy is a non-surgical method which extends from health promotion to injury prevention, acute care, rehabilitation, maintenance of functional mobility, chronic disease management, patient and career education and occupational health.
-Using advanced techniques and evidence-based care, our physiotherapists assess, diagnose, treat and prevent a wide range of health conditions and movement disorders and thus improve quality of life
-
-            <span id="dots10">...</span><span id="more10">
-                We have a committed, dedicated and friendly team to guide you through a holistic treatment program. Using our unique Total Care Philosophy Framework, we will assess, diagnose and treat you with a program tailored to your own injury journey with plenty of communication the entire way through.
-                We will help you change the way you move so you can stand taller, jump higher, stretch deeper, and have the energy to lead the life you want.
-                Some of the conditions we handle/treat include,
-               
+                Using advanced techniques and evidence-based care, our physiotherapists assess, diagnose, treat and prevent a wide range of health conditions and movement disorders and thus improve quality of life
                 
-                    •	Lower back pain
-                    •	Cervical /Neck pain 
-                    •	Fracture Management
-                    •	Ostoeathritis
-                    •	Intervertebral disc herniation /Bulge/Prolapse
-                    •	Chest physiotherapy &Postural drainage
-                    •	Pre and postnatal conditions
-                    •	Neurological conditions e.g Stroke
-                    •	Calcaneal spur &Fascitis
-                    •	Tendons &ligament strains and tear
-                    •	Joint sprains
-                    •	Sports Injuries
-                    •	Frozen Shoulder
-                    •	Post Operation Rehabilitation
-                    •	Neuropathy
-                    •	Urinary Incontinence(Pelvic Floor Muscle Strengthening)
-                    •	Soft Tissue Manipulation/Relaxation therapy/Massage
-                    •	Sacroilliac Joints dysfunction
-                    •	Overuse injuries
-                    •	Overprescribing &educating patients on assistive orthopaedic devices and walking aids
-                    •	Joint manipulation &mobilization
-                    •	Enhancing Physical Fitness
-                    •	Educating on your health condition
-                    •	Prescribing home program exercise
-
-
-
-                
-                
-            </span>  
-
             </p>
-            <button class="btn" onclick="myFunction()" id="myBtn10">Read more</button>
+            <a class="btn" href="#book-form">Book now</a>
         </div>
         
     </div>
@@ -630,8 +561,10 @@ Using advanced techniques and evidence-based care, our physiotherapists assess, 
         <div class="box" data-aos="fade-up" data-aos-delay="600">
             <h3>newsletter</h3>
             <p>subscribe for latest updates</p>
-            <form action="https://formsubmit.co/victormwendwa2002@gmail.com" method="POST">
-                <input type="email" name="" placeholder="enter your email" class="email" id="">
+            <form action="https://formsubmit.co/info@odilias.co.ke" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Newsletter subscription!">
+                <input type="email" name="email" placeholder="enter your email" class="email" id="">
                 <input type="submit" value="subscribe" class="btn">
             </form>
         </div>
